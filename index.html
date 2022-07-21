@@ -13,7 +13,7 @@
       href="https://play-lh.googleusercontent.com/D82omFSKvRExAz6bUEQrwTdVRgImhf1xgSqH6ApFMRJUzpxkJ9tfCNmZ01uha2ME7v8"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./style/index.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -25,6 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/navigation.css" />
   </head>
   <body>
     <div class="head-wraper">
@@ -196,7 +198,7 @@
             <div class="category-tooltip">
               <div>
                 <p>Local Warehouses</p>
-                <div class="sub-category-tooltip">
+                <!-- <div class="sub-category-tooltip">
                   <div>
                     <div>
                       <p>EU Warehouse</p>
@@ -241,7 +243,7 @@
                       alt=""
                     />
                   </div>
-                </div>
+                </div> -->
               </div>
               <div>Sports & Outdoors</div>
               <div>Smart Home & Garden</div>
@@ -280,5 +282,210 @@
         </div>
       </div>
     </div>
+    <main class="main-section">
+      <section id="trend-section">
+        <div class="left-slider">
+          <img
+            class="slides fade"
+            style="display: block"
+            src="https://img.gkbcdn.com/s3/bn/2206/740x670-62b43fbe2b40c929b45e3123.jpg"
+            alt=""
+          />
+          <img
+            class="slides fade"
+            src="https://img.gkbcdn.com/bn/2207/740x670-62d8af552b40c9259c333f38._p1_.jpg"
+            alt=""
+          />
+          <img
+            class="slides fade"
+            src="https://img.gkbcdn.com/bn/2207/740x670-62d502cc2b40c924340fa9df._p1_.jpg"
+            alt=""
+          />
+          <img
+            class="slides fade"
+            src="https://img.gkbcdn.com/bn/2207/740x670-62cd3c2e2b40c91fd0c2346f._p1_.jpg"
+            alt=""
+          />
+          <img
+            class="slides fade"
+            src="https://img.gkbcdn.com/bn/2206/740x670-62bbee082b40c929841e0af6._p1_.jpg"
+            alt=""
+          />
+          <img
+            class="slides fade"
+            src="https://img.gkbcdn.com/bn/2207/740X670-62c3b8132b40c9270489e6ae._p1_.jpg"
+            alt=""
+          />
+
+          <div class="left-button" onclick="plusSlide(-1)">
+            <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+          </div>
+          <div class="right-button" onclick="plusSlide(1)">
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+          </div>
+          <div class="dot-box" style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="deals-of-the-day">
+            <h3>Deal of the Day</h3>
+            <span class="timer-title"
+              >Ends in <span class="timer">00:23:09:24</span></span
+            >
+            <div class="deals-products">
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2022-05-30/3-5-Inch-IPS-TYPE-C-Secondary-Screen-CPU-GPU-RAM-HDD-Monitoring-501430-0._w280_p1_.jpg"
+                  alt=""
+                />
+                <span class="deals-off">24% OFF</span>
+                <div class="deals-price">
+                  <span>&#8377;2290.5</span>
+                  <del>&#8377;3027.06</del>
+                </div>
+                <div class="deals-claimed">
+                  <div class="bar-box">
+                    <div class="bar" style="width: 48%"></div>
+                  </div>
+                  <span>96 Left</span>
+                </div>
+              </div>
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2019-10-11/jjrc-x12-4k-gps-rc-drone-white-two-batteries-with-bag-1574132236117._w280_p1_.jpg"
+                  alt=""
+                />
+                <span class="deals-off">30% OFF</span>
+                <div class="deals-price">
+                  <span>&#8377;18821.12</span>
+                  <del>&#8377;27004.57</del>
+                </div>
+                <div class="deals-claimed">
+                  <div class="bar-box">
+                    <div class="bar" style="width: 50%"></div>
+                  </div>
+                  <span>98 Left</span>
+                </div>
+              </div>
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2022-05-25/Flytec-V005-RC-Boat-2-4G-Remote-Control-with-Simulation-Crocodile-Head-501276-0._w280_p1_.jpg"
+                  alt=""
+                />
+                <span class="deals-off">33% OFF</span>
+                <div class="deals-price">
+                  <span>&#8377;2945.22</span>
+                  <del>&#8377;4418.24</del>
+                </div>
+                <div class="deals-claimed">
+                  <div class="bar-box">
+                    <div class="bar" style="width: 48%"></div>
+                  </div>
+                  <span>98 Left</span>
+                </div>
+              </div>
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2019-03-18/tronsmart-element-t6-plus-bluetooth-speaker-black-1574132869322._w280_p1_.jpg"
+                  alt=""
+                />
+                <span class="deals-off">25% OFF</span>
+                <div class="deals-price">
+                  <span>&#8377;4909.25</span>
+                  <del>&#8377;6545.94</del>
+                </div>
+                <div class="deals-claimed">
+                  <div class="bar-box">
+                    <div class="bar" style="width: 60%"></div>
+                  </div>
+                  <span>134 Left</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-products">
+            <h3>Featured Products</h3>
+            <div class="featured-products-deals">
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2019-11-15/mifo-o7-bluetooth-5-0-tws-qualcomm-qcc3020-earphones-black-1574132882676._w280_p1_.jpg"
+                  alt=""
+                />
+                <p class="product-title">Mifo O7 Bluetooth 5.0</p>
+                <div class="deals-price">
+                  <span>&#8377;7364.29</span>
+                  <del>&#8377;13092.70</del>
+                </div>
+              </div>
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2019-02-20/stmagic-spt31-512g-mini-portable-m-2-ssd-gray-1571995742585._w280_p1_.jpg"
+                  alt=""
+                />
+                <p class="product-title">STmagic SPT31</p>
+                <div class="deals-price">
+                  <span>&#8377;6136.77</span>
+                  <del>&#8377;7527.96</del>
+                </div>
+              </div>
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2022-06-20/Tronsmart-Onyx-Pure-True-wireless-earbuds--Black-506265-0._w280_p1_.jpg"
+                  alt=""
+                />
+                <p class="product-title">Tronsmart Onyx Pure</p>
+                <div class="deals-price">
+                  <span>&#8377;2454.22</span>
+                  <del></del>
+                </div>
+              </div>
+              <div class="deals-items">
+                <img
+                  class="deals-img"
+                  src="https://img.gkbcdn.com/p/2022-05-25/Flytec-V005-RC-Boat-2-4G-Remote-Control-with-Simulation-Crocodile-Head-501276-0._w280_p1_.jpg"
+                  alt=""
+                />
+                <p class="product-title">Flytec V005 RC Boat</p>
+                <div class="deals-price">
+                  <span>&#8377;2945.22</span>
+                  <del>&#8377;4418.24</del>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="trending-cat">
+        <h1>Trending Categories</h1>
+        <div class="trending-div"></div>
+      </section>
+      <section id="new-for-you">
+        <h1>New For You</h1>
+        <a href="#">See More</a>
+        <div class="new-for-container">
+          <div class="new-left">
+            <img
+              src="https://img.gkbcdn.com/bn/2207/276-62c812d72b40c929e83fbc42._p1_.jpg"
+              alt=""
+            />
+          </div>
+          <div class="new-slider"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
+<script src="./script/index.js"></script>
