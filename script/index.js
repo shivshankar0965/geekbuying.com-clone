@@ -72,3 +72,21 @@ trendCat.map(function (e) {
   des.textContent = e.des;
   div.append(image, title, des);
 });
+// displaying the link
+let expand = document.querySelector(".expand");
+let exp;
+expand.addEventListener("click", function () {
+  if (exp === 1) {
+    document.querySelector(".exp-container").style.display = "flex";
+    document.querySelector(
+      ".plus-icon"
+    ).innerHTML = `<i class="fa-solid fa-minus"></i>`;
+    return (exp = 0);
+  } else {
+    document.querySelector(".exp-container").style.display = "none";
+    document.querySelector(
+      ".plus-icon"
+    ).innerHTML = `<i class="fa-solid fa-plus"></i>`;
+    return (exp = 1);
+  }
+});

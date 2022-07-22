@@ -18,7 +18,7 @@
   height: 100%;
   margin: 10px 0;
   margin-left: 20px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   justify-content: center;
   align-items: center;
   font-weight: 400;
@@ -426,6 +426,7 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 240px;
   display: none;
+  z-index: 100;
 }
 .category-tooltip > div {
   padding: 10px 10px;
@@ -448,3 +449,14 @@
   background-color: rebeccapurple;
 }
 /*------------------------navigation bar end here-----------------------------*/
+/* --------------navigation bar sign up and sign in start here--------------- */
+#header-wrapper {
+  background-color: #1d7efc;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header-wrapper > img {
+  width: 15%;
+}
