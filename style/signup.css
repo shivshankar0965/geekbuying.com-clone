@@ -1,0 +1,52 @@
+.bg-image {
+  background-image: url("https://img.gkbcdn.com/bn/2207/roborockq7max-62d4c7422b40c92434e2fa93._p1_.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 70vh;
+  position: relative;
+}
+*:focus {
+  outline: none;
+}
+.form-container-parent {
+  width: 100%;
+  position: absolute;
+}
+.form-container {
+  background-color: #fff;
+  width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+}
+
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container > form > input {
+  padding: 12px 14px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid rgb(239, 239, 239);
+}
+.form-container > form > input[type="submit"] {
+  background-color: #1d7efc;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.head > a {
+  color: #000;
+  text-decoration: none;
+}
+.copy-right {
+  padding: 20px 0;
+  text-align: center;
+}
