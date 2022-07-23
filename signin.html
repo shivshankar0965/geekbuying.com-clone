@@ -20,10 +20,9 @@
           <div class="form-container">
             <div class="head">
               <h3>Create Your account</h3>
-              <a href="signin.html">Sign In</a>
+              <a href="signup.html">Sign Up</a>
             </div>
             <form action="">
-              <input id="name" type="text" placeholder="Nick name" />
               <input
                 type="email"
                 name=""
@@ -31,7 +30,7 @@
                 placeholder="Email address"
               />
               <input type="password" id="pswd" placeholder="Password" />
-              <input type="submit" value="Create account" />
+              <input type="submit" value="Sign In" />
             </form>
           </div>
         </div>
@@ -44,41 +43,26 @@
     </footer>
   </body>
 </html>
-
 <script>
   document
     .querySelector("#header-wrapper > img")
     .addEventListener("click", function () {
-      window.location.href = "index.html";
+      window.location.replace("index.html");
     });
-
+  let geekUsersData = JSON.parse(localStorage.getItem("geeksUsers"));
   let form = document.querySelector("form");
-
-  let geekUsers = JSON.parse(localStorage.getItem("geeksUsers")) || [];
   form.addEventListener("submit", function () {
     event.preventDefault();
-    let obj = {
-      name: form.name.value,
-      email: form.email.value,
-      password: form.pswd.value,
-    };
     if (
-      geekUsers.some(function (e) {
-        return e.email == form.email.value;
+      geekUsersData.some(function (e) {
+        return e.email == form.email.value && e.password == form.pswd.value;
       })
     ) {
-      alert("Email already Exist");
-    } else if (
-      form.name.value == "" ||
-      form.email.value == "" ||
-      form.pswd.value == ""
-    ) {
-      alert("Please Fill all input fields");
+      alert("Login successful!");
+      localStorage.setItem("current_geek_User", form.email.value);
+      window.location.href = "index.html";
     } else {
-      geekUsers.push(obj);
-      localStorage.setItem("geeksUsers", JSON.stringify(geekUsers));
-      alert("Signed up Successfully ! Enjoy your shopping");
-      window.location.href = "signin.html";
+      alert("Login failed Please Enter correct details");
     }
   });
 </script>

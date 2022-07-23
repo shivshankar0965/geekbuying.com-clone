@@ -90,3 +90,37 @@ expand.addEventListener("click", function () {
     return (exp = 1);
   }
 });
+// signin and sign up and page router
+document.querySelector("#sign-up").addEventListener("click", function () {
+  window.location.href = "signup.html";
+});
+document.querySelector("#sign-in").addEventListener("click", function () {
+  window.location.href = "signin.html";
+});
+// navigation middle bar display and hide
+const navbar = document.querySelector(".middle-head-wraper-parent");
+window.onscroll = () => {
+  if (window.scrollY > 700) {
+    navbar.classList.add("fixed-position");
+  } else if (window.scrollY < 700) {
+    navbar.classList.remove("fixed-position");
+    // navbar.classList.add("remove-position");
+  }
+};
+// timer in home page
+let countDownDate = new Date("Jul 30, 2022 15:58:52").getTime();
+var myfunc = setInterval(function () {
+  var now = new Date().getTime();
+  var timeleft = countDownDate - now;
+
+  var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+  document.querySelector(".timer").innerHTML =
+    days + "d" + " " + hours + "h" + " " + minutes + "m" + " " + seconds + "s";
+  if (timeleft < 0) {
+    clearInterval(myfunc);
+    document.getElementById(".timer").innerHTML = "TIME UP!!";
+  }
+}, 1000);
