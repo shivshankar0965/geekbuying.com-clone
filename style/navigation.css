@@ -183,6 +183,15 @@
   background-color: #1174fd;
   padding: 10px 0;
 }
+/*position fixed and removed*/
+.fixed-position {
+  position: fixed;
+  top: -10px;
+  z-index: 200;
+}
+.remove-position {
+  position: inherit;
+}
 .middle-head-wraper {
   width: 80%;
   margin: auto;
@@ -230,10 +239,14 @@
   border: none;
   padding: 4px 0;
 }
+.search-input > input:focus {
+  outline: none;
+}
 .search-logo > i {
   margin-left: 8px;
   color: #1174fd;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 .ship-to {
   display: flex;
@@ -459,4 +472,5 @@
 }
 #header-wrapper > img {
   width: 15%;
+  cursor: pointer;
 }

@@ -104,7 +104,7 @@ body {
   height: 49%;
   border-radius: 5px;
 }
-.deals-of-the-day > h3 {
+.deals-of-the-day > h4 {
   font-size: 1.6rem;
   font-weight: bold;
   display: inline;
@@ -112,7 +112,7 @@ body {
 .timer-title {
   color: red;
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .deals-products {
   display: grid;
